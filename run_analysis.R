@@ -17,7 +17,7 @@ test.x <- read.table("./data/UCI HAR Dataset/test/X_test.txt")
 test.y <- read.table("./data/UCI HAR Dataset/test/y_test.txt")
 test.subject <- read.table("./data/UCI HAR Dataset/test/subject_test.txt")
 
-## step 4: merge train and test data
+## 4: merge train and test data
 trainData <- cbind(train.subject, train.y, train.x)
 testData <- cbind(test.subject, test.y, test.x)
 fullData <- rbind(trainData, testData)
